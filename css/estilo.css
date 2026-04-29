@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de pantalla completa */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    
+    /* La imagen de fondo */
+    background-image: url('../img/rotulo.jpg');
+    
+    /* Que cubra toda la pantalla */
+    background-size: cover;
+    
+    /* La imagen no se repite */
+    background-repeat: no-repeat;
+    
+    /* La imagen se queda fija al hacer scroll */
+    background-attachment: fixed;
+    
+    /* Centrar la imagen */
+    background-position: center center;
+}
+
+/* Hacer que el contenido se vea sobre la imagen */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/*  ///////////////////////////////////////////////////  */
+
+/* Fondo de pantalla completo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Imagen de fondo */
+    background-image: url('../img/rotulo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+    /* Fallback si la imagen no carga */
+    background-color: #1a1a1a;
+}
+
+/* Header transparente */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenido con fondo blanco translúcido */
+main {
+    background-color: rgba(255, 255, 255, 0.92);
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer transparente */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida h2 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+#imagen-principal {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Estilos para la galería de fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.item-galeria {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-galeria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.item-galeria p {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+}
+
+/* Estilos para la galería de videos */
+.galeria-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.item-video {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.item-video iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+.item-video h3 {
+    padding: 15px 15px 5px 15px;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.item-video p {
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    color: #666;
+}
+
+/* Para que se vea bien en celular */
+@media (max-width: 768px) {
+    .galeria-videos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Logo en el encabezado */
+#logo-principal {
+    width: 500px;  /* Ajusta este valor según tu imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos generales para contactos */
+.contactos-basicos, 
+.contactos-redes, 
+.contactos-mapa {
+    margin-top: 20px;
+}
+
+.info-contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.info-contacto h3 {
+    color: #d4af37;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.info-contacto p {
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+
+.mapa {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mapa h3 {
+    color: #d4af37;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.mapa iframe {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.mapa-nota {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-directo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+/* ------------------------- */
+/* ESTILOS PARA CONTACTOS    */
+/* ------------------------- */
+
+/* Main transparente */
+main {
+    background-color: transparent !important;  /* Fuerza transparencia */
+    box-shadow: none !important;  /* Elimina sombras */
+}
+
+/* Estilos para las secciones de contacto */
+.info-contacto, .mapa {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(2px); /* Efecto sutil de desenfoque */
+}
+
+.info-contacto h3 {
+    color: #d4af37;
+    margin-top: 0;
+}
+
+.info-contacto p {
+    color: white;
+    line-height: 1.6;
+}
+
+.mapa h3 {
+    color: #d4af37;
+}
+
+.mapa-nota {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-directo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* Ajuste para el título principal */
+main h2 {
+    color: #d4af37;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+main > p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+/*///////////////////////////////////////////////////////*/
+
+main {
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+    color: #d4af37;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Pequeña animación al cargar */
+main {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    main h2 {
+        font-size: 28px;
+    }
+    
+    main p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+/* Estilos ESPECÍFICOS solo para la página de historia */
+.historia-main {
+    /* Mejora la tipografía */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    
+    /* Texto más grande */
+    font-size: 18px;
+    
+    /* Mejor espaciado entre líneas */
+    line-height: 2;
+    
+    /* Texto justificado (más elegante) */
+    text-align: justify;
+    
+    /* Palabras más separadas */
+    word-spacing: 2px;
+    
+    /* Letras ligeramente más separadas */
+    letter-spacing: 0.5px;
+    
+    /* Negrita ligera para mejor legibilidad */
+    font-weight: 500;
+}
+
+/* Estilo específico para los títulos en historia */
+.historia-main h2 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Estilo específico para los párrafos en historia */
+.historia-main p {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Resaltar la primera letra de cada párrafo */
+.historia-main p::first-letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #d4af37;
+    margin-right: 8px;
+}
+
+/* Estilo especial para el último párrafo (el agradecimiento) */
+.historia-main p:last-of-type {
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #d4af37;
+}
+.historia-main {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.historia-main h2 {
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/*///////////////////////////////////////*/
+/* Sticky Footer - Hace que el footer siempre quede abajo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

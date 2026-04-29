@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Barbería G.T.</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+         
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/historia.html">Historia</a></li>
+                <li><a href="/fotos.html">Fotos</a></li>
+                <li><a href="/videos.html">Videos</a></li>
+                <li><a href="/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galería de Fotos</h2>
+        <p>Conoce nuestro trabajo y ambiente</p>
+        
+        <!-- Aquí irá la galería -->
+         <div class="galeria">
+    <div class="item-galeria">
+        <img src="img/corte1.jpeg" alt="corte mohawk">
+        <p>Corte mohawk</p>
+    </div>
+    
+    <div class="item-galeria">
+        <img src="img/corte2.jpeg" alt="sombra oscura">
+        <p>Sombra oscura</p>
+    </div>
+    
+    <div class="item-galeria">
+        <img src="img/local.jpeg" alt="Nuestro local">
+        <p>Ambiente familiar</p>
+    </div>
+    
+    <div class="item-galeria">
+        <img src="img/corte3.jpeg" alt="sombra baja">
+        <p>Sombra baja</p>
+    </div>
+
+     <div class="item-galeria">
+        <img src="img/corte4.jpeg" alt="semi-mohawk sombra media">
+        <p>semi-mohawk sombra media</p>
+    </div>
+    
+    <div class="item-galeria">
+        <img src="img/corte5.jpeg" alt="sombra media">
+        <p>sombra media</p>
+    </div>
+    
+      <div class="item-galeria">
+        <img src="img/corte6.jpeg" alt="sombra baja oscura">
+        <p>sombra baja oscura</p>
+    </div>
+   
+</div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Barbería G.T. - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+    // Esto hace que las fotos se agranden al hacer clic
+    const imagenes = document.querySelectorAll('.item-galeria img');
+    imagenes.forEach(img => {
+        img.addEventListener('click', function() {
+            window.open(this.src, '_blank');
+        });
+    });
+    </script>
+
+</body>
+</html>
