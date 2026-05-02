@@ -558,3 +558,52 @@ body {
 footer {
     margin-top: auto;
 }
+
+/*/////////////////////////////////////////////////////////*/
+/* Estilos exclusivos para historia.html */
+.historia-main {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+.historia-main h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #1876b4;
+    text-shadow: 0 0 10px #000000, 0 0 20px #0a0909, 0 0 30px #000000;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.historia-main p {
+    font-family: 'Segoe UI', 'Poppins', 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #f0f0f0;
+    font-weight: 400;
+}
+
+.historia-main p::first-letter {
+    font-size: 56px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: 0 0 8px #ff0000;
+    margin-right: 8px;
+}
+
+.historia-main p:last-of-type {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fffefe;
+    text-shadow: 0 0 5px #ff0000;
+    margin-top: 25px;
+}
