@@ -21,12 +21,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     /* Imagen de fondo */
+    body {
     background-image: url('../img/rotulo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: scroll;  /* ← Cambiado a scroll */
     background-position: center center;
-    background-color: #1a1a1a;
+}
 }
 
 /* ============================================ */
@@ -307,12 +308,11 @@ main > p {
     font-family: 'Impact', 'Arial Black', sans-serif;
     font-size: 48px;
     text-align: center;
-    color: #ff0000;
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff3300;
+    color: #1876b4;  /* Azul eléctrico/neón */
+    text-shadow: 0 0 5px #1876b4, 0 0 10px #0a5c8e, 0 0 15px #1876b4;
     margin-bottom: 30px;
     letter-spacing: 4px;
 }
-
 .historia-main p {
     font-family: 'Segoe UI', 'Poppins', 'Arial', sans-serif;
     font-size: 18px;
@@ -419,4 +419,57 @@ main > p {
     font-size: 48px;
     margin-bottom: 20px;
     color: #d4af37;
+}
+
+/* ============================================ */
+/* CORRECCIONES PARA MÓVIL (sin afectar tu diseño) */
+/* ============================================ */
+
+/* Solo para pantallas de celular */
+@media (max-width: 768px) {
+    
+    /* Corregir el fondo en móvil */
+    body {
+        background-attachment: scroll !important;
+        background-position: top center !important;
+        background-size: cover !important;
+    }
+    
+    /* Asegurar que el main tenga el fondo correcto en historia */
+    .historia-main {
+        margin: 20px !important;
+        padding: 20px !important;
+    }
+    
+    .historia-main h2 {
+        font-size: 32px !important;
+    }
+    
+    .historia-main p {
+        font-size: 16px !important;
+    }
+}
+/* ============================================ */
+/* AJUSTES EXCLUSIVOS PARA CELULAR              */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    
+    /* Fondo que se mueve con el scroll en móvil */
+    body {
+        background-attachment: scroll !important;
+        background-position: top center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    /* Ajustes para pantallas muy pequeñas */
+    .historia-main h2 {
+        font-size: 28px !important;
+    }
+    
+    .historia-main p {
+        font-size: 14px !important;
+    }
 }
