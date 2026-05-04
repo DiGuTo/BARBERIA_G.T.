@@ -21,12 +21,24 @@ body {
     /* La imagen no se repite */
     background-repeat: no-repeat;
     
-    /* La imagen se queda fija al hacer scroll */
-    background-attachment: fixed;
+    /* Cambia de 'fixed' a 'scroll' para celular */
+     background-attachment: scroll;  
     
     /* Centrar la imagen */
     background-position: center center;
 }
+
+/* Ajustes específicos para celulares */
+@media (max-width: 768px) {
+    body {
+
+         background-image: url('../img/rotuloCEL.jpg');  /* Imagen más liviana */
+        background-size: cover;
+        background-attachment: scroll;  /* En celular, mejor que no sea fijo */
+        background-position: top center; /* Enfoca la parte superior de la imagen */
+    }
+}
+
 
 /* Hacer que el contenido se vea sobre la imagen */
 header {
