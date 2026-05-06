@@ -57,7 +57,7 @@ body::before {
     inset: 0;
     background: rgba(0, 0, 0, 0.25);
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
     /* Fondo real (desktop): usa la misma rotulo.jpg */
     background-image: url('../img/rotulo.jpg');
     background-size: cover;
@@ -109,8 +109,9 @@ main::before {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    z-index: -1;
+    z-index: 0;
 }
+
 
 footer {
     background: rgba(0, 0, 0, 0.9);
