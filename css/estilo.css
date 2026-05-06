@@ -35,10 +35,29 @@ body {
 @media (max-width: 768px) {
     body {
         background-image: url('../img/rotuloCEL.jpg');
-        background-position: top center;
-        background-attachment: scroll; /* Mobile perf: avoid fixed jank */
+        /* Ajuste fino de crop en móviles */
+        background-position: center top;
+        /* Evita problemas de reflow/jerk en algunos navegadores móviles */
+        background-attachment: scroll;
     }
 }
+
+/* Capa extra para mejorar legibilidad independientemente del recorte */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    body::before {
+        background: rgba(0, 0, 0, 0.35);
+    }
+}
+
 
 /* ===== 2. LAYOUT: Header, Main, Footer ===== */
 header {
