@@ -38,7 +38,7 @@ body {
         /* Ajuste fino de crop en móviles */
         background-position: center top;
         /* Evita problemas de reflow/jerk en algunos navegadores móviles */
-        background-attachment: scroll;
+        background-attachment: local;
     }
 }
 
