@@ -37,8 +37,8 @@ body {
         background-image: url('../img/rotuloCELULAR.jpg');
         /* Ajuste fino de crop en móviles */
         background-position: center top;
-        /* Evita problemas de reflow/jerk en algunos navegadores móviles */
-        background-attachment: local;
+        /* Queremos que se mantenga como “fondo” durante el scroll */
+        background-attachment: fixed;
     }
 }
 
