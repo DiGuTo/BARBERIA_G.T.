@@ -34,7 +34,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-image: url('../img/rotuloCEL.jpg');
+        background-image: url('../img/rotuloCELULAR.jpg');
         /* Ajuste fino de crop en móviles */
         background-position: center top;
         /* Evita problemas de reflow/jerk en algunos navegadores móviles */
