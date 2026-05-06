@@ -111,11 +111,13 @@ main::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.06);
+    /* Sin blur para evitar contenido borroso en móviles/PC */
+    backdrop-filter: none;
     border-radius: 15px;
     z-index: 0;
 }
+
 
 
 footer {
