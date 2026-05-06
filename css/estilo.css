@@ -37,6 +37,11 @@ body {
         /* En móvil el fondo lo maneja el ::before para que el scroll sea consistente */
         background-image: none;
     }
+
+    /* Evita que el contenido se vea borroso en móviles */
+    main::before {
+        backdrop-filter: none;
+    }
 }
 
 @media (max-width: 768px) {
