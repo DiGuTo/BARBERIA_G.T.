@@ -157,13 +157,14 @@ nav a:hover {
 
 @media (max-width: 768px) {
     nav ul {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
+        gap: 0.75rem;
+        flex-direction: row; /* mobile horizontal */
+        justify-content: center;
+        flex-wrap: wrap; /* permite saltar a otra linea si no entra */
     }
     nav a {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
     }
 }
 
