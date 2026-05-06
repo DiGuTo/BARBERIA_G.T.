@@ -47,7 +47,7 @@ body {
 @media (max-width: 768px) {
     body::before {
         background: rgba(0,0,0,0.35);
-        background-image: url('../img/rotuloCEL.jpg');
+        background-image: url('../img/history.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
