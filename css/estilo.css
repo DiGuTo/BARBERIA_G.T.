@@ -74,7 +74,7 @@ body::before {
 @media (max-width: 768px) {
     body::before {
         /* Fondo real (mobile): rotuloCELULAR.jpg */
-        background-image: url('../img/history.jpg');
+        background-image: url('../img/rotuloCELULAR.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
