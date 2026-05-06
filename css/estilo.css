@@ -34,10 +34,18 @@ body {
 
 @media (max-width: 768px) {
     body {
+        /* En móvil el fondo lo maneja el ::before para que el scroll sea consistente */
+        background-image: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body::before {
+        background: rgba(0,0,0,0.35);
         background-image: url('../img/rotuloCELULAR.jpg');
-        /* Ajuste fino de crop en móviles */
+        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center top;
-        /* Queremos que se mantenga como “fondo” durante el scroll */
         background-attachment: fixed;
     }
 }
