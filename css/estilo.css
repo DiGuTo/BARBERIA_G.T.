@@ -233,6 +233,48 @@ main h2:not(.historia-main h2) {
     font-family: 'Georgia', serif; /* NICER font */
 }
 
+.producto-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+}
+
+.producto-card img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.producto-info {
+    max-width: 520px;
+}
+
+.producto-info h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    color: #ffd966;
+}
+
+.producto-info p {
+    margin-bottom: 0.9rem;
+    line-height: 1.75;
+}
+
+.producto-info .precio {
+    font-weight: 700;
+    color: #f8f0a8;
+}
+
 main > p:not(.historia-main p):not(.item-video p):not(.mapa-nota):not(.info-contacto p) {
     background: rgba(0,0,0,0.85);
     color: #fff;
