@@ -37,8 +37,6 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
-        <h3>Paola</h3>
-        <p>Agenda tu cita </p>
     </div>
 
     <!-- Video 2: Tour por el local -->
@@ -77,5 +75,17 @@
     <footer>
         <p>&copy; 2025 Barbería G.T. - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+    const items = document.querySelectorAll('.item-video');
+    items.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const iframe = this.querySelector('iframe');
+            const src = iframe.src;
+            const id = src.split('/embed/')[1].split('?')[0];
+            window.open(`https://youtube.com/watch?v=${id}`, '_blank');
+        });
+    });
+    </script>
 </body>
 </html>

@@ -60,20 +60,52 @@
         <img src="img/corte6.jpeg" alt="sombra baja oscura">
         <p>sombra baja oscura</p>
     </div>
+     <div class="item-galeria">
+        <img src="img/corte7.jpeg" alt="Mohawk">
+        <p>Mohawk</p>
+    </div>
+    <div class="item-galeria">
+        <img src="img/corte8.jpeg" alt="Mohawk">
+        <p>Mohawk</p>
+    </div>
+    <div class="item-galeria">
+        <img src="img/corte9.jpeg" alt="sombra baja ">
+        <p>sombra baja</p>
+    </div>
+    <div class="item-galeria">
+        <img src="img/corte10.jpeg" alt="Semi-Mohawk sombra media">
+        <p>Semi-Mohawk sombra media</p>
+    </div>
+    <div class="item-galeria">
+        <img src="img/corte11.jpeg" alt="Diseño">
+        <p>Diseño</p>
+    </div>
+    <div class="item-galeria">
+        <video class="galeria-video" src="img/videoCorte1.mp4" controls preload="metadata"></video>
+        <p>Sombra clara media </p>
+    </div>
+   
    
 </div>
         
     </main>
+
 
     <footer>
         <p>&copy; 2025 Barbería G.T. - Todos los derechos reservados</p>
     </footer>
 
     <script>
-    // Esto hace que las fotos se agranden al hacer clic
     const imagenes = document.querySelectorAll('.item-galeria img');
-    imagenes.forEach(img => {
+    imagenes.forEach((img, index) => {
         img.addEventListener('click', function() {
+            window.open(this.src, '_blank');
+        });
+    });
+
+    const videos = document.querySelectorAll('.item-galeria video');
+    videos.forEach((video, index) => {
+        video.addEventListener('click', function() {
             window.open(this.src, '_blank');
         });
     });
