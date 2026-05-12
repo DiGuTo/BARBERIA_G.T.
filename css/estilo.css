@@ -200,6 +200,42 @@ footer {
     font-weight: 500;
 }
 
+.galeria-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.item-video {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-video iframe {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 14px;
+}
+
+.item-video h3,
+.item-video p {
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
