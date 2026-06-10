@@ -146,6 +146,36 @@ main > p {
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+.contacto-cta {
+    max-width: 720px;
+    margin: 0 auto 1.8rem auto;
+    padding: 1.3rem 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255, 211, 0, 0.18), rgba(255, 255, 255, 0.08));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(10px);
+}
+
+.contacto-cta-intro {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.contacto-cta-main {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffd966;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    text-align: center;
+    text-shadow: 0 16px 25px rgba(0, 0, 0, 0.32);
+    margin: 0;
+}
+
 .page-content {
     flex: 1;
 }
