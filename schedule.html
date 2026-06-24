@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Citas - Barbería G.T.</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="schedule-main">
+        <div class="schedule-header">
+            <div>
+                <h2>Calendario de Citas</h2>
+                <p id="welcomeText">Cargando información...</p>
+            </div>
+            <button id="logoutButton" class="secondary">Cerrar sesión</button>
+        </div>
+
+        <div id="noSession" class="info-panel hidden">
+            <p>No hay una sesión iniciada. <a href="login.html">Inicia sesión</a> primero.</p>
+        </div>
+
+        <section id="adminPanel" class="role-panel hidden card">
+            <h3>Panel de administrador</h3>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <span class="summary-value" id="adminDatesCount">0</span>
+                    <span class="summary-label">Fechas registradas</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-value" id="adminAvailableCount">0</span>
+                    <span class="summary-label">Slots disponibles</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-value" id="adminOccupiedCount">0</span>
+                    <span class="summary-label">Slots ocupados</span>
+                </div>
+            </div>
+            <div class="admin-table-container">
+                <h4>Detalles por fecha</h4>
+                <div id="adminDateList" class="admin-list"></div>
+            </div>
+            <div class="form-actions">
+                <button id="adminReset" class="secondary">Limpiar agenda</button>
+            </div>
+        </section>
+
+        <section id="employeePanel" class="role-panel hidden card">
+            <h3>Control de disponibilidad</h3>
+            <div class="input-inline">
+                <label for="employeeDate">Selecciona fecha</label>
+                <input id="employeeDate" type="date">
+            </div>
+            <div id="employeeSlots" class="slot-grid"></div>
+            <p class="small-text">Haz clic en un horario para alternar entre disponible y ocupado.</p>
+        </section>
+
+        <section id="clientPanel" class="role-panel hidden card">
+            <h3>Agenda tu cita</h3>
+            <div class="input-inline">
+                <label for="clientDate">Selecciona fecha</label>
+                <input id="clientDate" type="date">
+            </div>
+            <div id="clientSlots" class="slot-grid"></div>
+            <p class="small-text">Solo se muestran los horarios que el empleado marcó como disponibles.</p>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
